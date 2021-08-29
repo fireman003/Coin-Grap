@@ -79,6 +79,8 @@ namespace _2dplatformer
             // 
             // pbGround
             // 
+            this.pbGround.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbGround.BackColor = System.Drawing.Color.ForestGreen;
             this.pbGround.Location = new System.Drawing.Point(-24, 608);
             this.pbGround.Name = "pbGround";
@@ -145,6 +147,8 @@ namespace _2dplatformer
             // 
             // pbLWall
             // 
+            this.pbLWall.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.pbLWall.Location = new System.Drawing.Point(-4, -4);
             this.pbLWall.Name = "pbLWall";
             this.pbLWall.Size = new System.Drawing.Size(10, 619);
@@ -153,6 +157,8 @@ namespace _2dplatformer
             // 
             // pbRWall
             // 
+            this.pbRWall.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbRWall.Location = new System.Drawing.Point(1210, -4);
             this.pbRWall.Name = "pbRWall";
             this.pbRWall.Size = new System.Drawing.Size(10, 619);
@@ -193,6 +199,7 @@ namespace _2dplatformer
             // 
             // lbhscore
             // 
+            this.lbhscore.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lbhscore.AutoSize = true;
             this.lbhscore.Location = new System.Drawing.Point(1041, 9);
             this.lbhscore.Name = "lbhscore";

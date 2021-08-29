@@ -31,6 +31,7 @@ namespace _2dplatformer
         {
             if (!pbPlayer.Bounds.IntersectsWith(pbGround.Bounds) && isJumping == false)
                 pbPlayer.Top += 10;
+
             if (pbPlayer.Bounds.IntersectsWith(pbLWall.Bounds)) 
             {
                 Lwall = true;
