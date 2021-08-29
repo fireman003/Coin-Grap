@@ -15,6 +15,8 @@ namespace _2dplatformer
     {
         bool isJumping = false;
         bool leftMove = false;
+        bool Lwall = false;
+        bool Rwall = false;
 
         List<Coin> cList = new List<Coin>();
         int score = 0;
@@ -29,25 +31,45 @@ namespace _2dplatformer
         {
             if (!pbPlayer.Bounds.IntersectsWith(pbGround.Bounds) && isJumping == false)
                 pbPlayer.Top += 10;
+            if (pbPlayer.Bounds.IntersectsWith(pbLWall.Bounds)) 
+            {
+                Lwall = true;
+            }
+            if (!pbPlayer.Bounds.IntersectsWith(pbLWall.Bounds))
+            {
+                Lwall = false;
+            }
+
+            if (pbPlayer.Bounds.IntersectsWith(pbRWall.Bounds))
+            {
+                Rwall = true;
+            }
+            if (!pbPlayer.Bounds.IntersectsWith(pbRWall.Bounds))
+            {
+                Rwall = false;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            pbPlayer.Left -= 10;               
+            if (Lwall == false)
+            {
+                pbPlayer.Left -= 10;
+            }             
         }
 
         private void Right_Tick(object sender, EventArgs e)
         {
-            pbPlayer.Left += 10;
+            if (Rwall == false)
+            {
+                pbPlayer.Left += 10;
+            }
         }
 
         private void Up_Tick(object sender, EventArgs e)
-        {
-            
-            
+        {  
             pbPlayer.Top -= 10;
-            isJumping = true;
-            
+            isJumping = true;   
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -186,6 +208,8 @@ namespace _2dplatformer
             lbScore.Location = new Point(12, 9);
             pbPlayer.Location = new Point(229, 224);
             pbEnemy1.Location = new Point(982, 342);
+
+            lbScore.Text = "Score: " + score;
 
             pbRetry.Hide();
 
