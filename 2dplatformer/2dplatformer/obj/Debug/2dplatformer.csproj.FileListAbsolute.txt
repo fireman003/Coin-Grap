@@ -1,0 +1,10 @@
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\bin\Debug\2dplatformer.exe.config
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\bin\Debug\2dplatformer.exe
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\bin\Debug\2dplatformer.pdb
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\2dplatformer.csprojAssemblyReference.cache
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\_2dplatformer.Form1.resources
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\_2dplatformer.Properties.Resources.resources
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\2dplatformer.csproj.GenerateResource.cache
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\2dplatformer.csproj.CoreCompileInputs.cache
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\2dplatformer.exe
+C:\Users\marek\source\repos\2dplatformer\2dplatformer\obj\Debug\2dplatformer.pdb
